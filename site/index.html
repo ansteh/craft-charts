@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+    <style>
+      .my-cool-point{
+        fill-opacity: 1!important;
+        stroke-width: 0px;
+        stroke: red;
+        transition: all 0.2s linear;
+      }
+      .my-cool-point:hover{
+        r: 7;
+        stroke-opacity: 0.2;
+        stroke-width: 20px;
+      }
+    </style>
   </head>
 
   <body>
     <div style="width: 600px; margin: auto;">
-
+      <div class="line-chart" style="height: 300px; margin-top: 50px;"></div>
     </div>
   </body>
 
   <script src="bower_components/bluebird/js/browser/bluebird.min.js"></script>
   <script src="bower_components/chartist/dist/chartist.min.js"></script>
+  <script src="bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="client/app.js"></script>
 </html>
