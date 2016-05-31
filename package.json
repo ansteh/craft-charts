@@ -2,10 +2,11 @@
   "name": "craft-charts",
   "version": "0.0.0",
   "description": "Some charts crafted with Chartist.js",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "node test/test",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "site": "node site/index.js"
   },
   "engines": {
     "node": ">=4"
@@ -14,18 +15,20 @@
     "type": "git",
     "url": "https://github.com/ansteh/craft-charts.git"
   },
-  "keywords": [
-
+  "keywords": [],
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md"
   ],
   "author": "Andre Stehle",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ansteh/craft-charts/issues"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
-
+    "express": "^4.13.4"
   }
 }

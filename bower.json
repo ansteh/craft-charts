@@ -1,0 +1,12 @@
+{
+  "name": "craft-charts",
+  "main": [],
+  "devDependencies": {
+    "angular": "~1.5.6",
+    "bluebird": "~3.4.0"
+  },
+  "ignore": [],
+  "dependencies": {
+    "chartist": "~0.9.7"
+  }
+}
