@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+    <script src="bower_components/chartist/dist/chartist.min.js"></script>
+    <!--<link rel="stylesheet" href="bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">-->
+    <link rel="stylesheet" href="https://rawgit.com/Globegitter/chartist-plugin-tooltip/master/dist/chartist-plugin-tooltip.css">
+    <script src="bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
     <style>
-      .my-cool-point{
-        fill-opacity: 1!important;
-        stroke-width: 0px;
-        stroke: red;
-        transition: all 0.2s linear;
-      }
-      .my-cool-point:hover{
-        r: 7;
-        stroke-opacity: 0.2;
-        stroke-width: 20px;
-      }
+
+       .my-cool-point{
+         fill-opacity: 1!important;
+         stroke-width: 0px;
+         stroke: red;
+         transition: all 0.2s linear;
+       }
+       .my-cool-point:hover{
+         r: 7;
+         stroke-opacity: 0.2;
+         stroke-width: 20px;
+       }
+
     </style>
   </head>
 
@@ -27,8 +33,6 @@
   </body>
 
   <script src="bower_components/bluebird/js/browser/bluebird.min.js"></script>
-  <script src="bower_components/chartist/dist/chartist.min.js"></script>
-  <script src="bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="client/app.js"></script>
 </html>
