@@ -1,4 +1,4 @@
-(function(angular){
+(function(angular, Chartist){
   var app = angular.module('app', []);
   console.log(app);
 
@@ -10,6 +10,8 @@
       [1, 3, 4, 5, 6]
     ]
   }, {
+    low: 0,
+    high: 13,
     fullWidth: true,
     chartPadding: {
       right: 40
@@ -23,7 +25,7 @@
 
   Linechart.on('draw', function(data) {
     if(data.type === 'point') {
-      console.log(data.value.y);
+      //console.log(data.value.y);
       var circle = new Chartist.Svg('circle', {
   	    cx: [data.x],
         cy: [data.y],
@@ -35,4 +37,4 @@
       data.element.replace(circle);
     }
   });
-}(angular));
+}(angular, Chartist));
