@@ -8,6 +8,7 @@
   "ignore": [],
   "dependencies": {
     "chartist": "~0.9.7",
+    "chartist-plugin-axistitle": "~0.1.0",
     "chartist-plugin-tooltip": "~0.0.12"
   }
 }

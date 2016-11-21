@@ -14,11 +14,35 @@
     high: 13,
     fullWidth: true,
     chartPadding: {
-      right: 40
+      top: 20,
+      right: 0,
+      bottom: 30,
+      left: 0
     },
     plugins: [
       Chartist.plugins.tooltip({
         pointClass: 'my-cool-point'
+      }),
+      Chartist.plugins.ctAxisTitle({
+        axisX: {
+          axisTitle: 'Time (mins)',
+          axisClass: 'ct-axis-title',
+          offset: {
+            x: 0,
+            y: 50
+          },
+          textAnchor: 'middle'
+        },
+        axisY: {
+          axisTitle: 'Goals',
+          axisClass: 'ct-axis-title',
+          offset: {
+            x: 0,
+            y: 0
+          },
+          textAnchor: 'middle',
+          flipTitle: false
+        }
       })
     ]
   });
